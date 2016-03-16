@@ -1,0 +1,1 @@
+clone "https://hired.com/login"

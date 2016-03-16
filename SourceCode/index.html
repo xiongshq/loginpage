@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Main-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header class='fluid-container'>
+		<nav class=' navigationbar'>
+			<div class='container'>
+				<div class='navigationbar__header'>
+					<a class='navigationbar__header__logo' href='/' target='_self'>
+						<img alt='Hired' class='icon icon--hired' height='15' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' width='95'>
+					</a>
+				</div>
+			<div class='navigationbar__toggle'>
+				<div class='navigationbar__toggle__element'>
+					<img alt='Menu' class='icon icon--sandwich' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'>
+				</div>
+				<input class='navigationbar__toggle__helper' type='checkbox'>
+				<ul class='navigationbar__navigation xs-text-right'>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/how-it-works">How it works</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/employers">For Employers</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/invite?traffic_source=u_h_sessions_new">Invite</a></li>
+					<li class="navigationbar__item navigationbar__item--is-active "><a class="navigationbar__link" target="_self" href="/login">Sign In</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/signup">Sign Up</a></li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class='container sm-mt2'>
+		<div class='layout xs-text-center'>
+			<div class='layout__item sm-8of12 md-6of12 lg-5of12'>
+				<div class='paper'>
+					<form class="new_user" id="new_user" action="/login" accept-charset="UTF-8" method="post">
+						<input name="utf8" type="hidden" value="&#x2713;" />
+						<input type="hidden" name="authenticity_token" value="/VRo27tGJhr/mRlQ7UX2wBXkLOlyuiFZ9WScIHExLDeIdri2PZvfd5Ln2jyRy8kjEG40AkUsVbgP8HM8jdidfQ=="/>
+
+						<section>
+							<h1 class='xs-gamma paper__title'>Sign In</h1>
+						</section>
+						<hr>
+						<section class='xs-pb0'>
+							<ul class='tabs-navigation tabs-navigation--fixed tabs-navigation--buttons xs-mbh1'>
+								<li class='tabs-navigation__item'>
+									<a class='button button--small button--full button--secondary text-light' href='/users/auth/github'>GitHub</a>
+								</li>
+								<li class='tabs-navigation__item'>
+									<a class='button button--small button--full button--secondary text-light' href='/users/auth/facebook'>Facebook</a>
+								</li>
+								<li class='tabs-navigation__item'>
+									<a class='button button--small button--full button--secondary text-light' href='/users/auth/google'>Google</a>
+								</li>
+							</ul>
+							<input type="hidden" name="user_return_to" id="user_return_to" />
+							<div class="field field--required ">
+								<input class="text-input input--full" placeholder="Email" type="email" name="user[email]" id="user_email" />
+							</div>
+							<div class="field field--required ">
+								<input class="text-input input--full" placeholder="Password" type="password" name="user[password]" id="user_password" />
+							</div>
+						</section>
+						<hr>
+						<section>
+							<div class='layout layout--middle'>
+								<div class='layout__item xs-6of12'>
+									<a class='link xs-text-zeta' href='/users/password/new'>Forgot password</a>
+								</div>
+								<div class='layout__item xs-6of12 xs-text-right'>
+									<button type ="submit" name="commit" class="button button button--primary" id="sign_in" data-disable-with="Sign In">Sign In</button>
+								</div>
+							</div>
+						</section>
+					</form>
+				</div>
+				<div class='layout xs-text-center'>
+					<div class='layout__item xs-ptbh1'>
+						<span class='text-gray'>Don't have an account?</span>
+						<a class='link text-gray text-underline' href='/signup'>Apply for Invitation</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='box box--white xs-ptb1 sm-mt2 sm-pt2 xs-bt1'>
+		<div class='container footer'>
+			<div class='layout layout--center xs-mrlh1'>
+				<div class='layout__item xs-6of12 sm-3of12 md-2of12 xs-mt1 sm-mt0'>
+					<div class='text-medium text-dark text-uppercase xs-mbh0'>Candidates</div>
+					<ul>
+						<li><a alt='Home' href='/home'>Home</a></li>
+						<li><a alt='How Hired Works' href='/how-it-works'>How It Works</a></li>
+						<li><a alt='Invite Your Friends &amp; Get Paid' href='/invite'>Invite</a></li>
+						</ul>
+				</div>
+				<div class='layout__item xs-6of12 sm-3of12 md-2of12 xs-mt1 sm-mt0'>
+					<div class='text-medium text-dark text-uppercase xs-mbh0'>Employers</div>
+					<ul>
+						<li><a alt='Hire a great team.' href='/for_employers'>For Employers</a></li>
+						<li><a href='/employers/faq'>FAQ</a></li>
+					</ul>
+				</div>
+				<div class='layout__item xs-6of12 sm-3of12 md-2of12 xs-mt1 sm-mt0'>
+					<div class='text-medium text-dark text-uppercase xs-mbh0'>Hired</div>
+					<ul>
+						<li><a href='/about'>About</a></li>
+						<li><a href='/careers'>Careers</a></li>
+						<li><a href='https://blog.hired.com'>Blog</a></li>
+						<li><a href='/support'>Support</a></li>
+					</ul>
+				</div>
+				<div class='layout__item xs-6of12 sm-3of12 xs-mt1 sm-mt0 sm-pl0'>
+					<div class='text-medium xs-block text-dark text-uppercase xs-mbh0'>Follow Us</div>
+					<a altarget='_blank' class='xs-mrh0' href='https://www.glassdoor.com/Overview/Working-at-Hired-EI_IE816441.11,16.htm'><img class='icon icon--social-glassdoor' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+					<a class='xs-mrh0' href='https://www.facebook.com/HiredInc/' target='_blank'><img class='icon icon--social-facebook' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+					<a class='xs-mrh0' href='https://twitter.com/Hired_HQ' target='_blank'><img class='icon icon--social-twitter' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+					<a class='xs-mrh0' href='https://www.instagram.com/hiredinc/' target='_blank'><img class='icon icon--social-instagram' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+					<a class='xs-mrh0' href='https://www.linkedin.com/company/hired-inc' target='_blank'><img class='icon icon--social-linkedin' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+					<a href='https://www.youtube.com/channel/UCwNUQ1kQphwzCYo4E0POCEw' target='_blank'><img class='icon icon--social-youtube' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></a>
+				</div>
+				<div class='layout__item xs-text-center xs-mth0'>
+					<ul class='xs-zeta footer__list'>
+						<li>© 2016 Hired, Inc. All Rights Reserved.</li>
+						<li><a href='/privacy' target='_self'>Privacy</a></li>
+						<li><a href='/terms' target='_self'>Terms</a></li>
+						<li><a href='/jobs' target='_self'>Jobs</a></li>
+						<li><a href='/cities' target='_self'>Cities</a></li>
+						<li><a href='/companies' target='_self'>Companies</a></li>
+						<li><a href='/company-directory' target='_self'>Directory</a></li>
+						<li><a href='/sitemap' target='_self'>Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='shade animated' data-ft-show-class='fadeIn' data-ft-hide-class='fadeOut'>
+
+	</div>
+
+	<!--jquery-->
+	<script src="js/jquery.min.js"></script>
+	<!--bootstrap-->
+	<script src="js/bootstrap.min.js"></script>
+	<!--main-->
+	<script src="js/main.js"></script>
+</body>
+</html>
