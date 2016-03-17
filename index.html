@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Main-->
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+   <header>
+		<nav class=' navigationbar'>
+			<div class='container'>
+				<div class='navigationbar__header'>
+					<a class='navigationbar__header__logo' href='/' target='_self'>
+						<img alt='Hired' class='icon icon--hired' height='15' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' width='95'>
+					</a>
+				</div>
+			<div class='navigationbar__toggle'>
+				<div class='navigationbar__toggle__element'>
+					<img alt='Menu' class='icon icon--sandwich' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'>
+				</div>
+				<input class='navigationbar__toggle__helper' type='checkbox'>
+				<ul class='navigationbar__navigation xs-text-right'>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/how-it-works">How it works</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/employers">For Employers</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/invite?traffic_source=u_h_sessions_new">Invite</a></li>
+					<li class="navigationbar__item navigationbar__item--is-active "><a class="navigationbar__link" target="_self" href="/login">Sign In</a></li>
+					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/signup">Sign Up</a></li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+	</header>
+
+    <div class="wrapper_signin">
+        <div class="paper_signin">
+            <form>
+             <section>
+                 <h1>Sign In</h1>
+             </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href='/users/auth/github'>GitHub</a>
+                    </li>
+                    <li class="secondary_li">
+                        <a href='/users/auth/facebook'>Facebook</a>
+                    </li>
+                    <li class="secondary_li">
+                        <a href='/users/auth/google'>Google</a>
+                    </li>
+                </ul>
+                <div>
+                    <input placeholder="Email" type="email" name="user[email]" id="user_email" />
+                </div>
+                <div>
+                    <input placeholder="Password" type="password" name="user[password]" id="user_password" />
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div>
+                        <a href='/users/password/new'>Forgot password</a>
+                    </div>
+                    <div>
+                        <button type ="submit" name="commit" id="sign_in" data-disable-with="Sign In">Sign In</button>
+                    </div>
+                </div>
+            </section>
+            </form>
+        </div>
+        <div>
+            <span>Don't have an account?</span>
+            <a>Apply for Invitation</a>
+        </div>
+    </div>
+</body>
+</html>
