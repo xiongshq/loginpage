@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-signin-client_id" content="407350504346-4uqfm0e2lop626ad5cs5c8b8fpi4d4k9.apps.googleusercontent.com">
     <title></title>
     <!-- Main-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
@@ -40,15 +41,11 @@
              </section>
             <section>
                 <ul>
-                    <li>
-                        <a href='/users/auth/github'>GitHub</a>
-                    </li>
-                    <li class="secondary_li">
-                        <a href='/users/auth/facebook'>Facebook</a>
-                    </li>
-                    <li class="secondary_li">
-                        <a href='/users/auth/google'>Google</a>
-                    </li>
+                        <li><a href='https://github.com/login/oauth/authorize?client_id=4183ff60d17bd38e04cf'>GitHub</a></li>
+                        <li class="secondary_li"><a href='/users/auth/facebook'>Facebook</a></li>
+                    <div class="g-signin2" data-onsuccess="onSignIn">
+                        <li class="secondary_li">Google</li>
+                    </div>
                 </ul>
                 <div class="input_fill">
                     <input placeholder="Email" type="email" name="user[email]" id="user_email" />
@@ -74,5 +71,9 @@
             <a>Apply for Invitation</a>
         </div>
     </div>
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </body>
 </html>
