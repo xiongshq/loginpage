@@ -3,14 +3,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html {
     font-size: 0.625rem; /*10px/8pt*/
     overflow-y: scroll;
@@ -29,13 +27,76 @@ body {
     padding: 0;
     font-size: 1.2rem; /*12px*/
     line-height: 2rem;
+    background-color: rgb(241,242,244);
+}
+
+/*Nav*/
+nav.navbar{
+    background-color: rgb(83,84,91);
+    border-color: transparent;
+    border-radius: 0;
+    font-family: 'Gotham SSm', sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+nav .navbar-brand {
+    padding: 0 4rem;
+}
+nav.navbar-default .navbar-nav>li>a {
+    font-family: 'Gotham SSm', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding-right: 1.5rem;
+    color: #BABBC1;
+}
+nav.navbar-default .navbar-nav>li.nav-active>a {
+    color: white;
+}
+nav.navbar-default .navbar-nav>li.nav-active>a:visited {
+    color: white;
+}
+nav.navbar-default .navbar-nav>li>a:hover {
+	background-color:black;
+    color: white;
+}
+nav.navbar-default .navbar-nav>li>a:visited {
+    color: #BABBC1;
+}
+.nav-active{
+    color: white;
+}
+.icon {
+    background: transparent url(../img/icons.png) no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle
+}
+.icon--hired {
+    background-position: 0 -627px;
+    width: 95px;
+    height: 14px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem
+}
+.icon--hired-dark {
+    background-position: 0 -611px;
+    width: 96px;
+    height: 16px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem
 }
 
 /*login form*/
+.wrapper_signin {
+    background-color: rgb(241,242,244);
+}
 .paper_signin {
     background-color: #FFFFFF;
     border: 1px solid #DEE0E5;
     color: #36373E;
+    margin: 0 auto;
 }
 .paper_signin h1 {
     font-weight: 300;
@@ -44,7 +105,6 @@ body {
     font-size: 2.4rem;
     margin:0;
 }
-
 .paper_signin section {
     border-bottom: 1px solid #DEE0E5;
     padding: 3rem 2rem;
@@ -57,31 +117,27 @@ body {
     padding: 0;
     margin-bottom: 3rem;
 }
-
 .paper_signin li {
     display: table-cell;
     width: 32%;
     text-align: center;
     color: rgb(54, 55, 62)
 }
-
 .paper_signin li.secondary_li {
     padding-left: 0.1rem;
 }
-
 .paper_signin li a {
     display: inline-block;
     color: white;
     text-decoration: none;
     margin: 0.5rem 0;
-    padding: 0.4rem 1rem;
+    padding: 1rem 1rem;
     font-size:1rem;
     letter-spacing: 0.15rem;
     text-transform:uppercase;
     background-color: rgb(164,165,173);
     width: 100%;
 }
-
 .paper_signin input {
     display: inline-block;
     vertical-align: middle;
@@ -94,30 +150,25 @@ body {
     border-color: rgb(186,187,193);
     color:rgb(54,55,62);
 }
-
 .paper_signin .input_fill{
     margin-bottom: 2rem;
 }
-
 .paper_signin .forgot_pass a{
     text-decoration: none;
     line-height: 2rem;
     text-align: left;
     color:rgb(27,129,211);
 }
-
-.paper_signin .forgot_pass{
+.paper_signin .forgot_pass {
     display: inline-block;
-    width: 50%;
+    width: 49%;
 
 }
-
 .paper_signin .signin_btn{
     display: inline-block;
     width: 49%;
     text-align:right;
 }
-
 .paper_signin .signin_btn button{
     background-color: rgb(57,192,155);
     border-color: rgb(57,192,155);
@@ -133,4 +184,69 @@ body {
     border-style: solid;
     border-radius: 0.2rem;
 
+}
+.apply_text {
+    color: #A4A5AD;
+    padding: 3rem 0;
+}
+/*validation*/
+#flashbar {
+    display: none;
+    background-color: #e97174;
+    color: #FFFFFF;
+}
+#flashbar_error {
+    padding: 0 4rem 0 7rem;
+    z-index: 1;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    display: inline-block;
+    position: relative;
+}
+#flashbar_close {
+    color: #FFFFFF;
+    float: right;
+    padding-right: 4rem;
+}
+
+
+
+/*Responsive*/
+.layout__item {
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .lg-5of12 {
+        width: 41.66667% !important;
+    }
+    .wrapper_signin {
+        padding-top: 4rem !important;
+    }
+    .paper_signin section {
+        padding: 3rem 7rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .md-6of12 {
+        width: 50% !important;
+    }
+    .wrapper_signin {
+        padding-top: 4rem !important;
+    }
+    .paper_signin section {
+        padding: 3rem 7rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .sm-8of12 {
+        width: 66.66667% !important;
+    }
+    .wrapper_signin {
+        padding-top: 4rem !important;
+    }
+    .paper_signin section {
+        padding: 3rem 7rem;
+    }
 }

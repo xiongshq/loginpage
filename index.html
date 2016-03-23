@@ -2,39 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-signin-client_id" content="407350504346-4uqfm0e2lop626ad5cs5c8b8fpi4d4k9.apps.googleusercontent.com">
     <title></title>
     <!-- Main-->
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
    <header>
-		<nav class=' navigationbar'>
-			<div class='container'>
-				<div class='navigationbar__header'>
-					<a class='navigationbar__header__logo' href='/' target='_self'>
-						<img alt='Hired' class='icon icon--hired' height='15' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' width='95'>
-					</a>
-				</div>
-			<div class='navigationbar__toggle'>
-				<div class='navigationbar__toggle__element'>
-					<img alt='Menu' class='icon icon--sandwich' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'>
-				</div>
-				<input class='navigationbar__toggle__helper' type='checkbox'>
-				<ul class='navigationbar__navigation xs-text-right'>
-					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/how-it-works">How it works</a></li>
-					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/employers">For Employers</a></li>
-					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/invite?traffic_source=u_h_sessions_new">Invite</a></li>
-					<li class="navigationbar__item navigationbar__item--is-active "><a class="navigationbar__link" target="_self" href="/login">Sign In</a></li>
-					<li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/signup">Sign Up</a></li>
-				</ul>
-			</div>
-			</div>
-		</nav>
+		<nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img id="navbar-brand-hover" alt="Hired" class="icon icon--hired" src="img/icons.png">
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">How it works</a></li>
+                  <li><a href="#">For Employers</a></li>
+                  <li><a href="#">Invite</a></li>
+                  <li class="nav-active"><a href="#">Sign in</a></li>
+                  <li><a href="#">Sign up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
 	</header>
 
+    <div id="flashbar">
+        <div id="flashbar_error"></div>
+        <a id="flashbar_close" href="#">×</a>
+    </div>
+
     <div class="wrapper_signin">
-        <div class="paper_signin">
+        <div class="paper_signin layout__item sm-8of12 md-6of12 lg-5of12">
             <form>
              <section>
                  <h1>Sign In</h1>
@@ -43,8 +55,12 @@
                 <ul>
                     <li><a target="_blank" href='https://github.com/login/oauth/authorize?client_id=4183ff60d17bd38e04cf'>GitHub</a></li>
                     <li class="secondary_li"><a target="_blank" href='https://www.facebook.com/dialog/oauth?client_id=813930858710853&redirect_uri=http://localhost:63342&scope=email,user_birthday'>Facebook</a></li>
+<<<<<<< HEAD
                     <li class="secondary_li"><a target="_blank" href='https://accounts.google.com/o/oauth2/auth?scope=https://www.google.com/m8/feeds&client_id=716721847690-v5i9pbn15qfeqdacts61n3qe733glcgo.apps.googleusercontent.com&redirect_uri=http://localhost&response_type=token
                     '>Google</a></li>
+=======
+                    <li class="secondary_li"><a target="_blank">Google</a></li>
+>>>>>>> 39bf2206efcb1035a1357084872812dd90d57656
                 </ul>
                 <div class="input_fill">
                     <input placeholder="Email" type="email" name="user[email]" id="user_email" />
@@ -65,14 +81,19 @@
             </section>
             </form>
         </div>
-        <div>
+        <div class="text-center apply_text">
             <span>Don't have an account?</span>
             <a>Apply for Invitation</a>
         </div>
     </div>
 
+    <!--jquery-->
+	<script src="js/jquery.min.js"></script>
+    <!--bootstrap-->
+	<script src="js/bootstrap.min.js"></script>
+    <!--Main-->
+	<script src="js/main.js"></script>
 
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 </html>
